@@ -5,6 +5,8 @@
 | 性能     | 3     |   5|4 |2 | 5| 5|
 | 易用性 | 5   |   4 |3 |5 |3 |3 |
 | 功能性| 高级特性支持mqtt/延迟  |   不支持 |手动性[^1] |支持延迟 |支持延迟 |支持延迟(最大15分钟延时) |
+
+
 更多参数对比请参照[链接](https://blog.csdn.net/belvine/article/details/80842240 "链接")
     
 #2. rabbitmq基础知识普及
@@ -240,8 +242,7 @@ public class Rabbitmq2ErrorHandler implements RabbitListenerErrorHandler {
     }
 ```
 [完整代码](https://github.com/cuber2simple/spring-rabbitmq-example "完整代码")
- 1. 使用`@queuesToDeclare`会创建队列，当队列不存在的时候
- 2.使用 `@QueueBinding`会创建exchange,bing,queue还有rountingKey
+ + 使用`@queuesToDeclare`会创建队列，当队列不存在的时候
+ + 使用 `@QueueBinding`会创建exchange,bing,queue还有rountingKey
 
 [^1]: 手动设置延迟时间，在rocketmq 启动的时候就需要设置好，以后都不能更改
-[^2]:HyperText Markup Language 超文本标记语言
